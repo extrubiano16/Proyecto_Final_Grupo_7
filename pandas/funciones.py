@@ -7,7 +7,7 @@ def promedios(nombre_archivo, nombre_columna):
         return "No existe la columna"
     else:
         return df[nombre_columna].mean()
-def desviacion_v2(nombre_archivo, columna):
+def desviacion(nombre_archivo, columna):
     try:
         df = pd.read_csv(nombre_archivo)
         if columna not in df.columns:
